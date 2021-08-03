@@ -1,0 +1,31 @@
+---
+About the Dataset: US Minimum Wage by State from 1968 to 2020
+The Basics
+What is this? In the United States, states and the federal government set minimum hourly pay ("minimum wage") that workers can receive to ensure that citizens experience a minimum quality of life. This dataset provides the minimum wage data set by each state and the federal government from 1968 to 2020.
+
+Why did you put this together? While looking online for a clean dataset for minimum wage data by state, I was having trouble finding one. I decided to create one myself and provide it to the community.
+
+Who do we thank for this data? The United States Department of Labor compiles a table of this data on their website. I took the time to clean it up and provide it here for you. :) The GitHub repository (with R Code for the cleaning process) can be found here!
+
+Content
+This is a cleaned dataset of US state and federal minimum wages from 1968 to 2020 (including 2020 equivalency values). The data was scraped from the United States Department of Labor's table of minimum wage by state.
+
+Description of Data
+The values in the dataset are as follows:
+
+Year: The year of the data. All minimum wage values are as of January 1 except 1968 and 1969, which are as of February 1.
+State: The state or territory of the data.
+State.Minimum.Wage: The actual State's minimum wage on January 1 of Year.
+State.Minimum.Wage.2020.Dollars: The State.Minimum.Wage in 2020 dollars.
+Federal.Minimum.Wage: The federal minimum wage on January 1 of Year.
+Federal.Minimum.Wage.2020.Dollars: The Federal.Minimum.Wage in 2020 dollars.
+Effective.Minimum.Wage: The minimum wage that is enforced in State on January 1 of Year. Because the federal minimum wage takes effect if the State's minimum wage is lower than the federal minimum wage, this is the higher of the two.
+Effective.Minimum.Wage.2020.Dollars: The Effective.Minimum.Wage in 2020 dollars.
+CPI.Average: The average value of the Consumer Price Index in Year. When I pulled the data from the Bureau of Labor Statistics, I selected the dataset with "all items in U.S. city average, all urban consumers, not seasonally adjusted".
+Department.Of.Labor.Uncleaned.Data: The unclean, scraped value from the Department of Labor's website.
+Department.Of.Labor.Cleaned.Low.Value: The State's lowest enforced minimum wage on January 1 of Year. If there is only one minimum wage, this and the value for Department.Of.Labor.Cleaned.High.Value are identical. (Some states enforce different minimum wage laws depending on the size of the business. In states where this is the case, generally, smaller businesses have slightly lower minimum wage requirements.)
+Department.Of.Labor.Cleaned.Low.Value.2020.Dollars: The Department.Of.Labor.Cleaned.Low.Value in 2020 dollars.
+Department.Of.Labor.Cleaned.High.Value: The State's higher enforced minimum wage on January 1 of Year. If there is only one minimum wage, this and the value for Department.Of.Labor.Cleaned.Low.Value are identical.
+Department.Of.Labor.Cleaned.High.Value.2020.Dollars: The Department.Of.Labor.Cleaned.High.Value in 2020 dollars.
+Footnote: The footnote provided on the Department of Labor's website. See more below.
+---
